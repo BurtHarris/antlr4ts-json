@@ -57,5 +57,10 @@ typings/
 # dotenv environment variables file
 .env
 
-# generated code
+# files generated as part of the build process
 gen/
+*.d.ts  
+*.js
+*.js.map
+
+# 

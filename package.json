@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme",
   "dependencies": {
+    "@types/node": "^7.0.18",
     "antlr4ts": "^0.4.0-alpha.4"
   },
   "devDependencies": {

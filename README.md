@@ -28,34 +28,7 @@ mkdir antlr4ts-json
 cd antlr4ts-json
 npm init
 ```
-At NPM will ask a few basic questions about your project and generate a skeleton file named **package.json**.   You can choose to leave most of these answers blank, but the initial version for this project like this:
-```json
-{
-  "name": "antlr4ts-json",
-  "version": "1.0.0",
-  "description": "Antlr4 tutorial project",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "Antlr4",
-    "parser",
-    "generator",
-    "TypeScript"
-  ],
-  "author": "Burt Harris",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BurtHarris/antlr4ts-json.git"
-  },
-  "bugs": {
-    "url": "https://github.com/BurtHarris/antlr4ts-json/issues"
-  },
-  "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme"
-}
-```
+At NPM will ask a few basic questions about your project and generate a skeleton file named **package.json**.   You can choose to leave most of these answers blank, but for this project I've chosen to fill them in, so [**package.json** started out like this](https://github.com/BurtHarris/antlr4ts-json/blob/1f82f180c65f36e0855ee20c4421fcbf8f07ab67/package.json).
 
 # Initial **Json.g4** grammar file and the **antlr4ts-cli** tool
 
