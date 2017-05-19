@@ -4,6 +4,7 @@
   "description": "Antlr4 tutorial project",
   "main": "index.js",
   "scripts": {
+    "antlr4": "antlr4ts Json.g4 -o gen",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/BurtHarris/antlr4ts-json/issues"
   },
-  "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme"
+  "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme",
+  "dependencies": {
+    "antlr4ts": "^0.4.0-alpha.4"
+  },
+  "devDependencies": {
+    "antlr4ts-cli": "^0.4.0-alpha.4"
+  }
 }
