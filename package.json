@@ -1,0 +1,17 @@
+{
+  "name": "antlr4ts-json",
+  "version": "1.0.0",
+  "description": "Antlr4 tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Antlr4",
+    "parser",
+    "generator",
+    "TypeScript"
+  ],
+  "author": "Burt Harris",
+  "license": "ISC"
+}
