@@ -11,42 +11,51 @@ For this example, we'll generate an NPM package to support the lightweight data-
 - Install [Node.js](https://nodejs.org/en/) - The stable version 6.10.3 (LTS) reccomended for most users
 - Install [Install the Java SDK]() -
 - Test prerequsites are installed at the command line:
-```
+```cmd
 node -v
 java -version
 ```
 - Upgrade to the latest stable version of NPM and install the TypeScript tools globally:
-```
+```cmd
 npm install -g npm typescript
 ```
 
 # Project Setup  
 
 We start by creating a directory for the project    
-```
+```cmd
 md antlr4ts-json
 cd antlr4ts-json
 npm init
 ```
 At NPM will ask a few basic questions about your project and generate a skeleton file named **project.json**.   You can choose to leave most of these answers blank, but the initial version for this project like this:
-
-  {
-    "name": "antlr4ts-json",
-    "version": "1.0.0",
-    "description": "Antlr4 tutorial project",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-      "Antlr4",
-      "parser",
-      "generator",
-      "TypeScript"
-    ],
-    "author": "Burt Harris",
-    "license": "ISC"
-  }
+```json
+{
+  "name": "antlr4ts-json",
+  "version": "1.0.0",
+  "description": "Antlr4 tutorial project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Antlr4",
+    "parser",
+    "generator",
+    "TypeScript"
+  ],
+  "author": "Burt Harris",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BurtHarris/antlr4ts-json.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BurtHarris/antlr4ts-json/issues"
+  },
+  "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme"
+}
+```
 
 
 
