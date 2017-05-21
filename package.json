@@ -4,7 +4,7 @@
   "description": "Antlr4 tutorial project",
   "main": "index.js",
   "scripts": {
-    "antlr4": "antlr4ts Json.g4 -o gen",
+    "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -28,6 +28,7 @@
     "antlr4ts": "^0.4.0-alpha.4"
   },
   "devDependencies": {
-    "antlr4ts-cli": "^0.4.0-alpha.4"
+    "antlr4ts-cli": "^0.4.0-alpha.4",
+    "rimraf": "^2.6.1"
   }
 }

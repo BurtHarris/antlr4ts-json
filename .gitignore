@@ -58,7 +58,7 @@ typings/
 .env
 
 # files generated as part of the build process
-gen/
+#gen/
 *.d.ts  
 *.js
 *.js.map
