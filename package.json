@@ -4,7 +4,7 @@
   "description": "Antlr4 tutorial project",
   "main": "index.js",
   "scripts": {
-    "prepair": "npm run antlr4 && tsc",
+    "prepulish": "npm run antlr4 && tsc",
     "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "antlr4ts-cli": "latest",
+    "git-repo-version": "^0.4.1",
     "rimraf": "^2.6.1"
   }
 }
