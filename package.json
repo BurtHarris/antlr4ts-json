@@ -4,7 +4,7 @@
   "description": "Antlr4 tutorial project",
   "main": "index.js",
   "scripts": {
-    "prepulish": "npm run antlr4 && tsc",
+    "prepublish": "npm run antlr4 && tsc",
     "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
