@@ -1,10 +1,13 @@
-antlr4ts - Yet another json parser
-==================================
+antlr4ts-json - Yet another JSON parser
+=======================================
 
-Why: This project is a tutorial for using the [Antlr4](http://www.antlr.org/) parser generator on  [Node.js](https://nodejs.org/) using the [TypeScript](http://www.typescriptlang.org/) and serve as a walkthrough of best practices for the NPM module [antlr4ts](https://www.npmjs.com/package/antlr4ts).
+This is a [JSON](http://json.org/)-based tutorial for using **[antlr4ts](https://www.npmjs.com/package/antlr4ts) & [antlr4ts-cli](https://www.npmjs.com/package/antlr4ts-cli)** to use [Antlr4](http://www.antlr.org/) grammars on [Node.js](https://nodejs.org/) using [TypeScript](http://www.typescriptlang.org/) using the npm packages .  
 
-This is _not_ a tutorial on the Antlr4 language, it's intended to illustrate use the node.js targeted `antlr4ts.   
+**[Click here to read the latest version of the walkthrough on github](https://github.com/BurtHarris/antlr4ts-json/tree/master/docs#readme)**
 
-It may evolve into a useful npm module as well, but until antlr4ts becomes stable, that's stretching it.
+Pre-release notes on why someone would build another JSON parser
+-----------
 
-**[The walkthrough starts here](docs/README)**
+The project does not duplicate the built-in JSON support found in most JavaScript engines.  Instead of parsing JSON into an object-tree, antlr4ts-json it generates a parse-tree complete with information about every token and rule it found, including its position (line and column).  Browser-based use of antlr4ts is not yet supported, but may be possible soon!
+
+This is __not__ a tutorial on Antlr4 grammars, instead it starts from an existing [`JSON.g4`](https://github.com/antlr/grammars-v4/tree/master/json) grammar and illustrates one practical way to use the **antlr4ts** tools.   As antlr4ts becomes more stable, thsi project may evolve into a more useful npm module as well.   
