@@ -14,7 +14,8 @@ This is a tutorial for using [`antlr4ts`](https://www.npmjs.com/package/antlr4ts
 Pre-release notes: *Why someone would build another JSON parser in JavaScript*
 -----------
 
-The project does not duplicate the built-in JSON support found in most JavaScript engines.  Instead of parsing JSON into an object-tree, antlr4ts-json it generates a parse-tree complete with information about every token and rule it found, e.g. the text's position.  
+The project is intended to replace the built-in JSON support found in most JavaScript engines, or the highly portable `json2.js`.  Instead of parsing JSON into plain-old JavaScript object, Antlr can produce a parse-tree complete with information about every token found, e.g. the text's position within a file.  Antlr also supports several patterns processing the the tree, including listeners and visitors.   As a result:
 
 - Error reporting (and recovery) can be better in Antlr-based parsers than some others.
+
 - A parse tree can be useful in tools that seek to transform javascript while preserving its formatting.   
