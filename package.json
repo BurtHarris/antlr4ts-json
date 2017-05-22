@@ -4,6 +4,7 @@
   "description": "Antlr4 tutorial project",
   "main": "index.js",
   "scripts": {
+    "prepair": "npm run antlr4 && tsc",
     "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,10 +26,10 @@
   "homepage": "https://github.com/BurtHarris/antlr4ts-json#readme",
   "dependencies": {
     "@types/node": "^7.0.18",
-    "antlr4ts": "^0.4.0-alpha.4"
+    "antlr4ts": "latest"
   },
   "devDependencies": {
-    "antlr4ts-cli": "^0.4.0-alpha.4",
+    "antlr4ts-cli": "latest",
     "rimraf": "^2.6.1"
   }
 }

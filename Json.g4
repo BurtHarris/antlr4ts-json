@@ -1,11 +1,8 @@
 /** Taken from "The Definitive ANTLR 4 Reference" by Terence Parr */
 
 // Derived from http://json.org
-grammar Json;
 
-json
-   : value
-   ;
+grammar Json;
 
 obj
    : '{' pair (',' pair)* '}'
@@ -13,7 +10,7 @@ obj
    ;
 
 pair
-   : STRING ':' value
+   : name=STRING ':' value
    ;
 
 array
@@ -22,8 +19,8 @@ array
    ;
 
 value
-   : STRING
-   | NUMBER
+   : string = STRING
+   | number = NUMBER
    | obj
    | array
    | 'true'
