@@ -1,7 +1,7 @@
 antlr4ts-json - Yet another JSON parser
 =======================================
 
-This is a tutorial for using [`antlr4ts`](https://www.npmjs.com/package/antlr4ts) & [`antlr4ts-cli`](https://www.npmjs.com/package/antlr4ts-cli)** to use [Antlr4](http://www.antlr.org/) grammars on [Node.js](https://nodejs.org/) using [TypeScript](http://www.typescriptlang.org/) using the npm packages.  It is based on the [JSON](http://json.org/)-based language beacuse this it is well understood in the JavaScript community. 
+This is a tutorial for using [`antlr4ts`](https://www.npmjs.com/package/antlr4ts) & [`antlr4ts-cli`](https://www.npmjs.com/package/antlr4ts-cli)to use [Antlr4](http://www.antlr.org/) grammars on [Node.js](https://nodejs.org/) (using [TypeScript](http://www.typescriptlang.org/)).  It is based on the [JSON](http://json.org/)-based language beacuse this it is well understood in the JavaScript community. 
 
 - *Work on the tutorial is still in-flux...* **[please click here](https://github.com/BurtHarris/antlr4ts-json/tree/master/docs#readme)** to read the latest version online using github.   
 
