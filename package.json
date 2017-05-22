@@ -1,7 +1,7 @@
 {
   "name": "antlr4ts-json",
   "version": "1.0.2",
-  "description": "Antlr4 tutorial project",
+  "description": "Antlr4ts (prelease) based json parser/tutorial ",
   "main": "index.js",
   "scripts": {
     "prepublish": "npm run antlr4 && tsc",
