@@ -1,10 +1,11 @@
 {
   "name": "antlr4ts-json",
-  "version": "1.0.5-0",
+  "version": "1.0.6-alpha.1",
   "description": "Antlr4ts (prelease) based json parser/tutorial ",
   "main": "index.js",
   "scripts": {
-    "prepublish": "npm run antlr4 && tsc",
+    "prepare": "npm run antlr4 && tsc",
+    "prepublish": "check-node-version --npm \">=4\" || npm run prepare",
     "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -30,6 +31,7 @@
   },
   "devDependencies": {
     "antlr4ts-cli": "latest",
+    "check-node-version": "^1.1.2",
     "git-repo-version": "^0.4.1",
     "rimraf": "^2.6.1"
   }
