@@ -1,6 +1,6 @@
 {
   "name": "antlr4ts-json",
-  "version": "1.0.6-alpha.1",
+  "version": "1.0.5-alpha",
   "description": "Antlr4ts (prelease) based json parser/tutorial ",
   "main": "index.js",
   "scripts": {
