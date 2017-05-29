@@ -1,13 +1,14 @@
 {
   "name": "antlr4ts-json",
-  "version": "1.0.5-alpha",
+  "version": "0.0.0-development",
   "description": "Antlr4ts (prelease) based json parser/tutorial ",
   "main": "index.js",
   "scripts": {
     "prepare": "npm run antlr4 && tsc",
     "prepublish": "check-node-version --npm \">=4\" || npm run prepare",
     "antlr4": "rimraf gen && antlr4ts Json.g4 -o gen -visitor",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "Antlr4",
@@ -19,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BurtHarris/antlr4ts-json.git"
+    "url": "https://github.com/BurtHarris/antlr4ts-json.git"
   },
   "bugs": {
     "url": "https://github.com/BurtHarris/antlr4ts-json/issues"
@@ -33,6 +34,7 @@
     "antlr4ts-cli": "latest",
     "check-node-version": "^1.1.2",
     "git-repo-version": "^0.4.1",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "semantic-release": "^6.3.6"
   }
 }
